@@ -1,5 +1,6 @@
 import { Box, Button, CssBaseline, ThemeProvider, Typography } from '@mui/material'
 import { createTheme } from '@mui/material/styles';
+import Header from 'layout/Header';
 import { themeSettings } from "theme";
 
 function App() {
@@ -10,19 +11,7 @@ function App() {
     <div className="app">
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Box
-          sx={{
-            background: theme.palette.rainbowColor
-          }}
-        >
-          <Typography
-            fontSize="32px"
-            fontWeight="bold"
-            variant="secondFontFamily"
-          >
-            SocialMedia
-          </Typography>
-        </Box>
+        <Header />
       </ThemeProvider>
     </div>
   );
