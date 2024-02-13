@@ -9,10 +9,10 @@ body,
   height: 100%;
   width: 100%;
   background-color: #191E35;
+  color: #FFFFFF;
+  overflow-y: auto;
 }
 
-.wrapper {
-  max-width: 1429px;
-  width: 100%;
-  margin-inline: auto;
+#root::-webkit-scrollbar {
+  display: none;
 }

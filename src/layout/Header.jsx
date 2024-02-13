@@ -33,7 +33,9 @@ const Header = () => {
                 top: 0,
                 left: 0,
                 right: 0,
-                backgroundColor: "rgba(0,0,0,.1)"
+                zIndex: 10,
+                boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+                background: theme.palette.backgroundColor
             }}
         >
             <FlexBetween
@@ -66,17 +68,19 @@ const Header = () => {
                             ))
                         }
                     </FlexBetween>
-                    <CommonButton sx={{
-                        backgroundColor: theme.palette.primaryColor,
-                        height: "50px"
-                    }}>
-                        <WalletIcon />
-                        <Typography variant="secondFontFamily" fontSize="25px"
-                            color={theme.palette.defaultColor}
-                        >
-                            Wallet
-                        </Typography>
-                    </CommonButton>
+                    <Box>
+                        <CommonButton sx={{
+                            background: theme.palette.primaryColor,
+                            height: "50px"
+                        }}>
+                            <WalletIcon />
+                            <Typography variant="secondFontFamily" fontSize="25px"
+                                color={theme.palette.defaultColor}
+                            >
+                                Wallet
+                            </Typography>
+                        </CommonButton>
+                    </Box>
                 </FlexBetween>
 
             </FlexBetween >

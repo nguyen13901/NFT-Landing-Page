@@ -1,5 +1,6 @@
 import { Box, Button, CssBaseline, ThemeProvider, Typography } from '@mui/material'
 import { createTheme } from '@mui/material/styles';
+import BannerLayout from 'layout/BannerLayout';
 import Header from 'layout/Header';
 import { themeSettings } from "theme";
 
@@ -12,6 +13,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
+        <BannerLayout />
       </ThemeProvider>
     </div>
   );
